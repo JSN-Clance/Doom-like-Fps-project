@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour
 
     public GameObject bullet;
     public Transform firePosition;
+    public Transform myCameraHead;
 
     // Start is called before the first frame update
     void Start()
@@ -52,8 +53,22 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(bullet, firePosition.position, firePosition.rotation);
+            RaycastHit hit;
 
+            if(Physics.Raycast(myCameraHead.position, myCameraHead.forward, out hit, 100f))
+            {
+                if(Vector3.Distance(myCameraHead.position, hit.point) > 2f)
+                {
+                    firePosition.LookAt(hit.point);
+                }
+                else
+                {
+                    firePosition.LookAt(myCameraHead.position + (myCameraHead.forward * 50f));
+                }
+                Debug.Log("Hit " + hit.transform.name + ", Nice Shoot!");
+            }
+
+            Instantiate(bullet, firePosition.position, firePosition.rotation);
         }
     }
 }
