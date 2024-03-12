@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 9302954f324372e4ca5a46450e835335
+  productGUID: eeaae5e419c8f2944a29d3e78d2ea81e
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Doom-like FPS demo
+  productName: demoFPS
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -766,14 +766,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Doom-like FPS demo
+  metroPackageName: demoFPS
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Doom-like FPS demo
+  metroApplicationDescription: demoFPS
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -842,10 +842,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 4200e87c-263e-47b7-8c33-223d1c2c52e5
+  cloudProjectId: 3d059666-60d0-4436-83d0-eb5d61a45bae
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Doom-like FPS demo
+  projectName: demoFPS
   organizationId: kiloromisan
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
