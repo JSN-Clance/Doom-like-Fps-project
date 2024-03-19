@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 36988154}
   m_Layer: 0
   m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -500,6 +500,7 @@ GameObject:
   - component: {fileID: 314426520}
   - component: {fileID: 314426519}
   - component: {fileID: 314426518}
+  - component: {fileID: 314426524}
   m_Layer: 0
   m_Name: Mogas
   m_TagString: Player_object
@@ -522,6 +523,7 @@ MonoBehaviour:
   speed: 5
   gravity: -9.81
   jumpHeight: 3
+  myAnimation: {fileID: 314426524}
   bullet: {fileID: 6576235372687213456, guid: e5ee5f7543859064fbf9c2df89448c0d, type: 3}
   firePosition: {fileID: 958857860}
   myCameraHead: {fileID: 963194228}
@@ -649,6 +651,28 @@ Transform:
   - {fileID: 958857860}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &314426524
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314426517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4cf63dfebac387144916af0a179aaa6c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &316521410
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +790,7 @@ GameObject:
   - component: {fileID: 359411158}
   m_Layer: 0
   m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1262,7 +1286,7 @@ GameObject:
   - component: {fileID: 671281950}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1835,7 +1859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad8ed0b9278e25a40a90b7cb1b74a2a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 500
   playerBody: {fileID: 314426523}
 --- !u!1 &1142723255
 GameObject:
@@ -2173,7 +2197,7 @@ GameObject:
   - component: {fileID: 1336956900}
   m_Layer: 0
   m_Name: Sphere (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2384,7 +2408,7 @@ GameObject:
   - component: {fileID: 1538056171}
   m_Layer: 0
   m_Name: enemies
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
