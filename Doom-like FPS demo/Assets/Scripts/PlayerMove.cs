@@ -16,6 +16,8 @@ public class PlayerMove : MonoBehaviour
     public Transform firePosition;
     public Transform myCameraHead;
 
+    public GameObject muzzuieFlash, bulletHole; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +70,7 @@ public class PlayerMove : MonoBehaviour
                 Debug.Log("Hit " + hit.transform.name + ", Nice Shoot!");
             }
 
+            Instantiate(muzzuieFlash, firePosition.position, firePosition.rotation, firePosition);
             Instantiate(bullet, firePosition.position, firePosition.rotation);
         }
     }
