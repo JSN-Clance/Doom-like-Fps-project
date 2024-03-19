@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
 
+    public Animator myAnimation;
+
     public GameObject bullet;
     public Transform firePosition;
     public Transform myCameraHead;
@@ -38,6 +40,10 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 moveDirection = transform.right * horizontal + transform.forward * vertical;
         controller.Move(moveDirection * speed * Time.deltaTime);
+        
+        //Debug.Log(moveDirection.magnitude);
+
+        myAnimation.SetFloat("Player_Speed", moveDirection.magnitude);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
