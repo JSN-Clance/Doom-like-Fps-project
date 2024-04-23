@@ -527,8 +527,11 @@ MonoBehaviour:
   bullet: {fileID: 6576235372687213456, guid: e5ee5f7543859064fbf9c2df89448c0d, type: 3}
   firePosition: {fileID: 958857860}
   myCameraHead: {fileID: 963194228}
-  muzzuieFlash: {fileID: 1743301284569550, guid: 962440eab7133f94caa83a08552f6e11, type: 3}
+  muzzleFlash: {fileID: 1743301284569550, guid: 962440eab7133f94caa83a08552f6e11, type: 3}
   bulletHole: {fileID: 4172385334244373317, guid: 0092d6918186e944a842a91f85c2b286, type: 3}
+  slideSpeed: 10
+  currentSliderTimer: 0
+  maxSliderTimer: 2
 --- !u!143 &314426519
 CharacterController:
   m_ObjectHideFlags: 0
